@@ -1,0 +1,104 @@
+.wrapper{
+    color: black;
+    width: 75%;
+    border-radius: 10px;
+    background-color: white;
+   
+
+    &>h2{
+        font-size: 28px;
+        line-height: 28px;
+        width: 100%;
+        background-color: #d8295d;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: white;
+        padding: 10px 10px;
+        
+    }
+}
+
+.inner{
+   
+    padding: 10px 20px;
+
+    .btn-add{
+        float: right;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #5046e5;
+        color: rgba(255, 255, 255, 0.87);
+        margin-right: 20px;
+
+        &:hover{
+            color: white;
+            background-color: #6a62e9;
+            cursor: pointer;
+        }
+    }
+
+
+    .table{
+        width: 100%;
+        margin-top: 50px;
+        //border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid;
+        border-radius: 10px;
+        overflow: hidden;
+        //border-style: dashed;
+        tr{
+            padding: 10px 5px;
+
+            th{
+                padding: 5px;
+            }
+            td{
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+
+        .main-category{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .sub-category{
+            font-size: 18px;
+            &>ul{
+                list-style: none;
+
+                &>li{
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: center;
+
+                    &>span{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+
+        .control{
+
+        }
+
+        .btn-control{
+            min-width: 60px;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover{
+                background-color: #5046e5;
+                color: white;
+            }
+        }
+
+    }
+}

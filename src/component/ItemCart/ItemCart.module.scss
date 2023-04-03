@@ -1,0 +1,46 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remove-item{
+   padding: 10px 10px 0px 10px;
+   background-color: transparent;
+   font-size: 2rem;
+   color: #7777;
+   &:hover{
+        color: rgb(79, 45, 45);
+    }
+}
+
+.product-list{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+
+    img{
+        width: 50px;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+
+    &:hover .name-product{
+        text-decoration: underline;
+        text-indent: 0;
+   
+    }
+}
+
+.name-product{
+    padding: 0 10px;
+}
+
+.amount{
+
+}

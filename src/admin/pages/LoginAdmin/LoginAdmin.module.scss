@@ -1,0 +1,98 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>h1{
+        margin-bottom: 30px;
+        font-size: 50px;
+        
+    }
+}
+
+
+.inner{
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,125,0,0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.form-login{
+    width: 100%;
+
+
+    .form-group{
+        width: 100%;
+        padding: 0 30px;
+        margin: 40px 0;
+
+        &>input{
+            border-radius: 5px;
+            padding: 10px 20px;
+            box-shadow: 0 0 5px rgba(132, 107, 215, 0.5);
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>button{
+        padding: 10px 40px;
+        border-radius: 5px;
+        background-color: chocolate;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &>p{
+        font-size: 30px;
+        color: white;
+        
+    }
+    .icon-loading{
+        animation: identifier 0.5s linear infinite ;
+    }
+    @keyframes identifier {
+        0%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

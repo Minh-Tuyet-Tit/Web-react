@@ -1,0 +1,30 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 999;
+
+
+    &>p{
+        font-size: 20px;
+        color: white;
+        animation: spiner 0.5s linear infinite;
+    }
+
+    @keyframes spiner {
+        0%{
+            transform: rotate(0);
+        }
+
+        100%{
+            transform: rotate(306deg);
+        }
+    }
+}

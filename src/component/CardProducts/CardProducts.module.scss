@@ -1,0 +1,192 @@
+.wrapper{
+    width: 25%;
+    
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: all .1s linear;
+    margin-left: -5px;
+ 
+    .card-img{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1;   
+        padding-top: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 0;
+        margin: auto;
+        margin-bottom: 10px;
+        transition: all 0.1s linear
+        
+    }
+
+    // giỏ hàng
+
+    .control-btn{
+                position: absolute;
+                bottom: 30px;
+                right: 20px;
+                display: none;
+
+                .btn-viewcart{
+                    margin: 0 10px;
+                    font-size: 14px;
+                    font-size: 1.8rem;
+                    color: #0a9878;
+                    padding: 14px 15px;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border-radius: 2px;
+
+                        &:hover{
+                            background-color: #4d4d4d;
+                            border-color: #4d4d4d;
+                            color: #fff;
+                        }
+                    }
+                
+
+
+                 .cart-icon{
+                    font-size: 1.8rem;
+                    padding: 14px 15px;
+                    text-align: center;
+                    color: #0a9878;
+                    background-color: white;
+                    cursor: pointer;
+                    
+                    border-radius: 2px;
+                    transition: background 0.2s linear;
+
+                    &:hover{
+                        color: white;
+                        background-color: #0a9878;
+                        border-color: #0a9878;
+                    }
+                 }
+               
+    }
+
+
+
+   
+
+    &:hover{
+        border: 1px solid rgb(229, 229, 229);
+       // border-top: transparent;
+        //box-shadow: 0 0 5px rgb(229, 229, 229);
+    }
+
+    &:hover .control-btn{
+        display: inline-block;
+
+    }
+
+    &:hover .card-img{
+        padding: 0;
+        
+    }
+    
+
+    &:hover .main-img{
+        
+       display: none;
+       
+    }
+
+
+    &:hover .hover-img{
+        
+        display: inline-block;
+      
+    }
+
+    .main-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hover-img{
+        width: 100%;
+        height: 100%;
+        display: none;
+        object-fit: cover;
+    }
+
+
+    // nội dung
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        
+        h5{
+                text-transform: uppercase;
+                color: #cccccc;
+                font-size: 11px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+        }
+        .title{
+                font-size: 15px;
+                font-size: 1.5rem;
+                padding: 0;
+                color: #4d4d4d;
+                margin-bottom: 4px;
+        }
+
+        .price{
+                font-size: 18px;
+                font-size: 1.8rem;
+                color: #0a9878;
+                margin-bottom: 0;
+        }
+    }
+
+    .AddtoCart{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        opacity: 0;
+         transition: transform 1s linear ;
+         //pointer-events: none;
+    }
+
+    .Added{
+        pointer-events: none;
+        background-color: #4d4d4d;
+    }
+
+    
+
+
+
+
+}
+
+@media screen and (max-width: 740px) {
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+@media screen and (min-width:740px) and (max-width: 1023px) {
+     .wrapper{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1200px){
+     .wrapper{
+        width: 33.33333333333%;
+    }
+}

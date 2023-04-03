@@ -1,0 +1,114 @@
+.wrapper{
+    width: 100%;
+    padding: 0 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    .form-control{
+        margin-bottom: 20px;
+
+         label{
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px 0;
+            border: 1px solid beige;
+            border-radius: 5px;
+
+            &:focus{
+                box-shadow: 0 0 5px blueviolet;
+            }
+        }
+    }
+
+
+    .product-category{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+        label{
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        select{
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 2px;
+            margin-right: 20%;
+            
+        }
+
+        .main-cate,
+        .sub-cate{
+            flex: 1;
+        }
+    }
+
+    .upload-img{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        margin-bottom: 20px;
+
+        &>div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+
+            .icon{
+                font-size: 46px;
+            }
+
+            &>p{
+                text-align: center;
+            }
+            
+        }
+        &>input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+    }
+
+
+    .control{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &>button{
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgb(243, 99, 99);
+            transition: .2s;
+
+            &:hover{
+                background-color: rgb(247, 82, 82);
+                color: white;
+            }
+        }
+    }
+}
