@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static('../build'));
 
 app.all('*', (req, res) => {
-    res.sendFile(path.resolve('../build/index.js'));
+    res.sendFile(path.resolve('../build/index.html'));
 });
 
 app.listen(9000, () => {
